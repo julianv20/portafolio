@@ -3,6 +3,11 @@ import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
 import { TypeAnimation } from 'react-type-animation';
+import { SiGmail } from 'react-icons/si';
+import { FaGithub } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
+
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -34,6 +39,27 @@ const Hero = () => {
               repeat={2}
               cursor={false}
             />
+            <div className="flex mt-10 gap-x-5">
+              <div className="flex items-center justify-center">
+                <SiGmail className="w-12 h-8 cursor-pointer" />
+                <span className="text-light ">jullianvanegas19@gmail.com</span>
+              </div>
+
+              <Link
+                to="https://github.com/julianv20"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub className="w-12 h-8 cursor-pointer" />
+              </Link>
+              <Link
+                to="https://www.linkedin.com/in/julian-vanegas-2a2300292/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin className="w-12 h-8 cursor-pointer" />
+              </Link>
+            </div>
           </div>
         </div>
         <div className="sm:bg-violet-500/10 rounded-3xl h-full">

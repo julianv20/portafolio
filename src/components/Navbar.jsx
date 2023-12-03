@@ -24,6 +24,17 @@ const Navbar = () => {
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const scrollToElement = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
   return (
     <nav
       className={`${
@@ -56,8 +67,8 @@ const Navbar = () => {
               key={nav.id}
               className={`${
                 active === nav.title ? 'text-white' : 'text-secondary'
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(nav.title)}
+              } hover:text-white  hover:scale-105 transition-all    text-[18px] font-medium cursor-pointer`}
+              onClick={() => scrollToElement(nav.id)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>

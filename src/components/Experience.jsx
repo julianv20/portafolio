@@ -54,10 +54,12 @@ const ExperienceCard = ({ experience }) => {
 };
 const Experience = () => {
   return (
-    <>
+    <div>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText}`}>What i have done so far</p>
-        <h2 className={`${styles.sectionHeadText}`}>Work experience</h2>
+        <p className={`${styles.sectionSubText}`} id="lenguajes">
+          what I know so far
+        </p>
+        <h2 className={`${styles.sectionHeadText}`}>Leguajes experience</h2>
       </motion.div>
 
       <div className="mt-20 flex flex-col">
@@ -67,7 +69,7 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
-    </>
+    </div>
   );
 };
 

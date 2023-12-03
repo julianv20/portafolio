@@ -23,6 +23,8 @@ import {
   jobit,
   tripguide,
   threejs,
+  codeConnect,
+  analitica,
 } from '../assets';
 
 export const navLinks = [
@@ -31,12 +33,12 @@ export const navLinks = [
     title: 'About',
   },
   {
-    id: 'work',
-    title: 'Work',
+    id: 'lenguajes',
+    title: 'Lenguajes',
   },
   {
-    id: 'contact',
-    title: 'Contact',
+    id: 'projects',
+    title: 'Projects',
   },
 ];
 
@@ -156,13 +158,21 @@ const testimonials = [
 
 const projects = [
   {
-    name: 'Car Rent',
+    name: 'Code Connect',
     description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+      'Code Connect is a social network tailored for developers, crafted as a part of my thesis project. This endeavor was developed using React with Redux and Redux Toolkit for the frontend, while the backend was implemented with Node.js, incorporating sockets for real-time communication. The objective behind Code Connect was to foster the creation of a community where developers could share knowledge and collaborate effectively on projects.',
     tags: [
       {
         name: 'react',
         color: 'blue-text-gradient',
+      },
+      {
+        name: 'Redux',
+        color: 'text-neutral-100',
+      },
+      {
+        name: 'Node - Express',
+        color: 'text-purple-600',
       },
       {
         name: 'mongodb',
@@ -173,49 +183,51 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: carrent,
+    image: codeConnect,
     source_code_link: 'https://github.com/',
   },
   {
-    name: 'Job IT',
+    name: 'Analitica',
     description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+      'Analitica was developed with the purpose of providing businesses with data organization capabilities. This platform allows businesses to input service data for each client, enabling them to visualize and analyze this data through various graphs. The goal is to derive intelligent insights and conclusions from the presented analytics, empowering businesses to make informed decisions based on the data collected.',
     tags: [
       {
         name: 'react',
         color: 'blue-text-gradient',
       },
       {
-        name: 'restapi',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'scss',
+        name: 'tailwind',
         color: 'pink-text-gradient',
       },
+      {
+        name: 'React Query',
+        color: 'text-green-600',
+      },
+      {
+        name: 'Node - Express',
+        color: 'text-purple-600',
+      },
+      {
+        name: 'SQL',
+        color: 'text-yellow-600',
+      },
     ],
-    image: jobit,
+    image: analitica,
     source_code_link: 'https://github.com/',
   },
   {
-    name: 'Trip Guide',
+    name: 'Diverse Project Portfolio',
+
     description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+      'Throughout my career, I ve crafted a range of projects, from movie search engines to expense management apps and web platforms dedicated to organizing favorite book collections. These endeavors span from straightforward and practical solutions to more comprehensive applications, showcasing my ability to adapt to diverse needs and deliver effective solutions.',
+
     tags: [
       {
-        name: 'nextjs',
+        name: 'react',
         color: 'blue-text-gradient',
       },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
     ],
-    image: tripguide,
+    image: '',
     source_code_link: 'https://github.com/',
   },
 ];
