@@ -15,7 +15,7 @@ const Hero = () => {
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} grid sm:grid-cols-[2fr_1fr] items-center`}
       >
-        <div className="flex gap-x-5">
+        <div className="flex gap-x-5 relative">
           <div className="flex flex-col justify-center items-center mt-5">
             <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
             <div className="w-1 sm:h-80 h-40 violet-gradient" />
@@ -34,12 +34,12 @@ const Hero = () => {
                 'I develop visual interfaces and web applications, focusing on user experience.',
               ]}
               speed={200}
-              className={`${styles.heroSubText} mt-2 text-white-100`}
+              className={`${styles.heroSubText} mt-2 text-white-100 h-8 `}
               wrapper="p"
               repeat={2}
               cursor={false}
             />
-            <div className="flex mt-10 gap-x-5">
+            <div className="flex flex-col  md:flex-row mt-10 absolute gap-5">
               <div className="flex items-center justify-center">
                 <SiGmail className="w-12 h-8 cursor-pointer" />
                 <span className="text-light ">jullianvanegas19@gmail.com</span>

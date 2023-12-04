@@ -49,7 +49,7 @@ const About = () => {
         robust solutions that optimize both functionality and usability,
         ensuring efficient performance across all layers of the application.
       </motion.p>
-      <div className="mt-20 flex gap-5">
+      <div className="w-full mt-20 grid grid-cols-[repeat(auto-fill,minmax(230px,1fr))] gap-5">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
